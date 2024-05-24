@@ -5,6 +5,7 @@
 *{
     padding: 0;
     margin: 0;
+    user-select: none;
 }
 
 /* CSS Variabel */
@@ -13,7 +14,10 @@
     --icon-gray: #737373;
     --icon-white: #fff;
     --icon-background: #2b2a29;
-    --button-primary-background: rgb(255,60,69);
+    --button-gradient-background: rgb(255,60,69);
+    --button-primary-background: #ff4655;
+    --poppins: 'Poppins', sans-serif;
+    --border: rgb(181, 175, 175);
 }
 
 header{
@@ -37,7 +41,7 @@ header #riot_games{
 }
 
 header nav {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--poppins);
     font-weight: 600;
 }
 
@@ -101,5 +105,49 @@ header .mainkan {
     border-radius: 12px;
     font-weight: 600;
     letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+main .jumbotron article {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .jumbotron article .desc {
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .jumbotron article .desc p {
+    color: var(--white-text);
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+
+main .jumbotron article .desc img {
+    height: 200px;
+}
+
+main .jumbotron article .desc div {
+    border: 1px var(--border) solid;
+}
+
+main .jumbotron article .desc button {
+    background-color: var(--button-primary-background);
+    color: var(--white-text);
+    font-family: var(--poppins);
+    font-weight: 600;
+    word-spacing: 5px;
+    letter-spacing: 1.5px;
+    width: 250px;
+    height: 60px;
+    margin: 8px;
+    border: none;
     cursor: pointer;
 }
