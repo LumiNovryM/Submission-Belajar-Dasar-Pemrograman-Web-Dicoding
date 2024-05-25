@@ -2,25 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Reset */
-*{
+* {
     padding: 0;
     margin: 0;
     user-select: none;
 }
 
 /* CSS Variabel */
-:root{
+:root {
     --white-text: #fff;
     --icon-gray: #737373;
     --icon-white: #fff;
     --icon-background: #2b2a29;
-    --button-gradient-background: rgb(255,60,69);
+    --button-gradient-background: rgb(255, 60, 69);
     --button-primary-background: #ff4655;
     --poppins: 'Poppins', sans-serif;
     --border: rgb(181, 175, 175);
+    --button-hover-effect: #0f1923;
 }
 
-header{
+header {
     background-color: #111111;
     height: 90px;
     position: sticky;
@@ -32,12 +33,12 @@ header{
     padding: 0 15px 0 15px;
 }
 
-header #valorant{
+header #valorant {
     height: 40px;
     cursor: pointer;
 }
 
-header #riot_games{
+header #riot_games {
     height: 120px;
     cursor: pointer;
 }
@@ -56,7 +57,7 @@ header nav ul {
     gap: 15px;
 }
 
-header nav ul li{
+header nav ul li {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -64,7 +65,7 @@ header nav ul li{
     letter-spacing: 1.5px;
 }
 
-header nav ul li span{
+header nav ul li span {
     color: var(--icon-gray);
     font-size: 20px !important;
 }
@@ -73,7 +74,7 @@ header nav ul li #esport {
     font-size: 15px !important;
 }
 
-header .search-btn{
+header .search-btn {
     background-color: var(--icon-background);
     color: var(--icon-white);
     padding: 8px;
@@ -89,19 +90,19 @@ header .language:hover {
     background-color: var(--icon-background);
 }
 
-header .language{
+header .language {
     border-radius: 15px;
     padding: 8px;
     cursor: pointer;
 }
 
-header .language span{
+header .language span {
     color: var(--icon-white);
 }
 
 header .mainkan {
     background: var(--button-primary-background);
-    background: linear-gradient(90deg, rgba(255,60,69,1) 0%, rgba(255,118,99,1) 100%);
+    background: linear-gradient(90deg, rgba(255, 60, 69, 1) 0%, rgba(255, 118, 99, 1) 100%);
     padding: 10px 15px;
     border: none;
     border-radius: 12px;
@@ -153,4 +154,10 @@ main .jumbotron article .desc button {
     margin: 8px;
     border: none;
     cursor: pointer;
+    transition: 0.25s;
+}
+
+main .jumbotron article .desc button:hover,
+main .jumbotron article .desc button:focus {
+    box-shadow: inset 250px 0 0 0 var(--button-hover-effect);
 }
