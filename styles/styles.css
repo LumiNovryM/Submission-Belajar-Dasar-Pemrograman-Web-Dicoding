@@ -33,6 +33,12 @@ header {
     padding: 0 15px 0 15px;
 }
 
+header .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header #valorant {
     height: 40px;
     cursor: pointer;
@@ -55,6 +61,57 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     gap: 15px;
+}
+
+header .lang_toggle {
+    display: flex;
+    gap: 20px;
+}
+
+header .lang_toogle .menu {
+    display: none;
+}
+
+@media screen and (max-width: 1294px) {
+    header nav ul li:nth-child(6){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    header nav ul li:nth-child(5){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1124px) {
+    header nav ul li:nth-child(4){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    header nav ul li:nth-child(3){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    header nav {
+        display: none;
+    }
+
+    header .mainkan {
+        display: none;
+    }
+
+    header .search-btn {
+        display: none;
+    }
+
+    header .lang_toogle .menu {
+        display: block;
+    }
 }
 
 header nav ul li {
@@ -85,6 +142,7 @@ header .search-btn {
 header .search-btn span {
     font-size: 30px !important;
 }
+
 
 header .language:hover {
     background-color: var(--icon-background);
