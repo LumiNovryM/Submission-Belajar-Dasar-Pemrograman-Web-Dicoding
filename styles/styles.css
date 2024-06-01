@@ -72,48 +72,6 @@ header .lang_toogle .menu {
     display: none;
 }
 
-@media screen and (max-width: 1294px) {
-    header nav ul li:nth-child(6){
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1225px) {
-    header nav ul li:nth-child(5){
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1124px) {
-    header nav ul li:nth-child(4){
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1040px) {
-    header nav ul li:nth-child(3){
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1025px) {
-    header nav {
-        display: none;
-    }
-
-    header .mainkan {
-        display: none;
-    }
-
-    header .search-btn {
-        display: none;
-    }
-
-    header .lang_toogle .menu {
-        display: block;
-    }
-}
-
 header nav ul li {
     display: flex;
     align-items: center;
@@ -218,4 +176,67 @@ main .jumbotron article .desc button {
 main .jumbotron article .desc button:hover,
 main .jumbotron article .desc button:focus {
     box-shadow: inset 250px 0 0 0 var(--button-hover-effect);
+}
+
+/* Responsive Breakpoint */
+
+@media screen and (max-width: 1294px) {
+    header nav ul li:nth-child(6){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    header nav ul li:nth-child(5){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1124px) {
+    header nav ul li:nth-child(4){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    header nav ul li:nth-child(3){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    header nav {
+        display: none;
+    }
+
+    header .mainkan {
+        display: none;
+    }
+
+    header .search-btn {
+        display: none;
+    }
+
+    header .lang_toogle .menu {
+        display: block;
+    }
+
+    main .jumbotron article .desc img {
+        height: 100px;
+    }
+
+    main .jumbotron article .desc button {
+        background-color: var(--button-primary-background);
+        color: var(--white-text);
+        font-family: var(--poppins);
+        font-weight: 600;
+        word-spacing: 5px;
+        letter-spacing: 1.5px;
+        width: 200px;
+        height: 40px;
+        margin: 8px;
+        border: none;
+        cursor: pointer;
+        transition: 0.25s;
+    }
 }
