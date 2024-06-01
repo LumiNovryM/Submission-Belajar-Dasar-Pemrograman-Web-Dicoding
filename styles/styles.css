@@ -63,13 +63,15 @@ header nav ul {
     gap: 15px;
 }
 
-header .lang_toggle {
-    display: flex;
-    gap: 20px;
+header .lang_toggle .menu .material-symbols-outlined {
+    display: none !important;
+    color: white;
 }
 
-header .lang_toogle .menu {
-    display: none;
+header .lang_toggle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 header nav ul li {
@@ -205,8 +207,24 @@ main .jumbotron article .desc button:focus {
 }
 
 @media screen and (max-width: 1025px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
     header nav {
         display: none;
+    }
+
+    header .lang_toggle .menu {
+        background-color: var(--icon-background);
+        border-radius: 15px;
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    header .lang_toggle .menu .material-symbols-outlined {
+        display: inline-block !important;
     }
 
     header .mainkan {
